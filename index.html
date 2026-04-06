@@ -111,8 +111,8 @@
                 
                 <div class="hero-actions">
                     <div class="btn-group hero-btn-group">
-                        <a href="#subscribe" class="btn btn-primary" data-i18n="hero_btn_newsletter">Get our newsletter</a>
-                        <a href="#join" class="btn btn-primary-outline" style="background: white;" data-i18n="hero_btn_join">Join our team</a>
+                        <a href="#subscribe" class="btn btn-primary" data-i18n="hero_btn_newsletter" onclick="gtag('event','click_hero_newsletter')">Get our newsletter</a>
+                        <a href="#join" class="btn btn-primary-outline" style="background: white;" data-i18n="hero_btn_join" onclick="gtag('event','click_hero_join')">Join our team</a>
                     </div>
                 </div>
             </div>
@@ -404,16 +404,16 @@
                 </div>
 
                 <!-- Initial button -->
-                <button id="join-btn" onclick="expandJoinButtons()" class="btn btn-primary btn-icon" style="padding: 1rem 2.5rem; font-size: 1rem; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; cursor: pointer; border: none;" data-i18n="footer_btn" data-i18n-html="true">
+                <button id="join-btn" onclick="gtag('event','click_join_team');expandJoinButtons()" class="btn btn-primary btn-icon" style="padding: 1rem 2.5rem; font-size: 1rem; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; cursor: pointer; border: none;" data-i18n="footer_btn" data-i18n-html="true">
                     Join Our Team <i data-lucide="arrow-right" style="width: 20px; height: 20px;"></i>
                 </button>
 
                 <!-- Expanded buttons (hidden by default) -->
                 <div id="join-expanded" style="display: none; gap: 1rem; align-items: center; justify-content: center; flex-wrap: wrap;">
-                    <a href="https://www.topcv.vn/cong-ty/cong-ty-tnhh-os-research/194303.html" target="_blank" class="btn btn-primary btn-icon" style="padding: 1rem 2rem; font-size: 0.95rem; border-radius: 50px; letter-spacing: 0.03em; font-weight: 700; gap: 0.5rem;" data-i18n="footer_btn_positions" data-i18n-html="true">
+                    <a href="https://www.topcv.vn/cong-ty/cong-ty-tnhh-os-research/194303.html" target="_blank" class="btn btn-primary btn-icon" style="padding: 1rem 2rem; font-size: 0.95rem; border-radius: 50px; letter-spacing: 0.03em; font-weight: 700; gap: 0.5rem;" data-i18n="footer_btn_positions" data-i18n-html="true" onclick="gtag('event','click_open_positions')">
                         <i data-lucide="briefcase" style="width: 18px; height: 18px;"></i> See Open Positions
                     </a>
-                    <a href="https://vn.linkedin.com/company/osresearch-vn" target="_blank" class="btn btn-primary-outline btn-icon" style="padding: 1rem 2rem; font-size: 0.95rem; border-radius: 50px; letter-spacing: 0.03em; font-weight: 700; color: white; border-color: rgba(255,255,255,0.3); gap: 0.5rem;" data-i18n="footer_btn_click" data-i18n-html="true">
+                    <a href="https://vn.linkedin.com/company/osresearch-vn" target="_blank" class="btn btn-primary-outline btn-icon" style="padding: 1rem 2rem; font-size: 0.95rem; border-radius: 50px; letter-spacing: 0.03em; font-weight: 700; color: white; border-color: rgba(255,255,255,0.3); gap: 0.5rem;" data-i18n="footer_btn_click" data-i18n-html="true" onclick="gtag('event','click_see_if_we_click')">
                         <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i> See If We Click
                     </a>
                 </div>
@@ -422,7 +422,7 @@
             <div class="footer-bottom">
                 <div class="copyright" data-i18n="footer_copy">© 2026 OS Research. Ho Chi Minh City, Vietnam.</div>
                 <div class="social-links">
-                    <a href="https://vn.linkedin.com/company/osresearch-vn" target="_blank">LinkedIn</a> • <a href="https://www.instagram.com/osresearch.vn/" target="_blank">Instagram</a>
+                    <a href="https://vn.linkedin.com/company/osresearch-vn" target="_blank" onclick="gtag('event','click_social',{platform:'linkedin'})">LinkedIn</a> • <a href="https://www.instagram.com/osresearch.vn/" target="_blank" onclick="gtag('event','click_social',{platform:'instagram'})">Instagram</a>
                 </div>
                 <div class="contact-email">
                     <a href="mailto:info@osresearch.vn">info@osresearch.vn</a>
@@ -582,6 +582,7 @@
         });
         function toggleLang() {
             currentLang = currentLang === 'en' ? 'vi' : 'en';
+            gtag('event', 'language_switch', { language: currentLang });
             applyTranslations(currentLang);
             document.getElementById('lang-label').textContent = currentLang.toUpperCase();
             document.documentElement.lang = currentLang;
@@ -673,7 +674,8 @@
                     const data = await res.json();
                     
                     if (res.ok && data.success) {
-                        // Success
+                        // Success — track in GA4
+                        gtag('event', 'newsletter_subscribe', { method: 'landing_page' });
                         feedback.textContent = currentLang === 'vi' 
                             ? '✓ Đăng ký thành công! Kiểm tra email của bạn nhé.' 
                             : '✓ You\'re in! Check your inbox.';

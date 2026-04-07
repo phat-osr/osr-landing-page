@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +22,7 @@
     <meta name="twitter:title" content="OS Research — The startup experiments no one else shares.">
     <meta name="twitter:description" content="The ideas we test, the ones we kill, and the frameworks behind every decision. WE'RE HIRING INNOVATORS.">
     <meta name="twitter:image" content="https://www.osresearch.ai/assets/images/anhthay.png">
+
     <!-- Google Fonts: IBM Plex Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,18 +53,27 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- ======== HEADER ======== -->
     <header class="header">
         <div class="container header-inner">
-            <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" class="logo" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <a href="#" class="logo" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
                 <img src="assets/logos/OSR_LOGO_TEXTURED_MARK_BLUE.png" alt="OS Research" height="32">
-                <span style="font-weight: 700; font-size: 1.25rem; color: var(--text-main); letter-spacing: -0.02em;">OS Research</span>
+                <span style="font-weight: 700; font-size: 1.25rem; color: var(--text-main); letter-spacing: -0.02em;">OS
+                    Research</span>
             </a>
             <div style="display: flex; align-items: center; gap: 0.75rem;">
-                <button id="lang-toggle" onclick="toggleLang()" style="display: flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.75rem; border-radius: 50px; border: 1.5px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.06); color: var(--text-main); font-size: 0.8rem; font-weight: 700; cursor: pointer; letter-spacing: 0.04em; transition: all 0.25s ease; backdrop-filter: blur(4px);">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <button id="lang-toggle" onclick="toggleLang()"
+                    style="display: flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.75rem; border-radius: 50px; border: 1.5px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.06); color: var(--text-main); font-size: 0.8rem; font-weight: 700; cursor: pointer; letter-spacing: 0.04em; transition: all 0.25s ease; backdrop-filter: blur(4px);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="width: 14px; height: 14px;">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M2 12h20" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
                     <span id="lang-label">EN</span>
                 </button>
                 <a href="#subscribe" class="btn btn-primary-outline btn-sm" data-i18n="header_subscribe">Subscribe</a>
@@ -97,15 +108,16 @@
                     <rect class="sketch-line" x="100" y="0" width="100" height="30" />
                     <path class="sketch-line delay-1" d="M150,30 L150,60 M145,55 L150,60 L155,55" />
                     <polygon class="sketch-line delay-2" points="150,60 200,90 150,120 100,90" />
-                    
+
                     <path class="sketch-line delay-3" d="M200,90 L250,90 L250,110 M245,105 L250,110 L255,105" />
                     <path class="sketch-line delay-3" d="M100,90 L50,90 L50,110 M45,105 L50,110 L55,105" />
-                    
+
                     <rect class="sketch-line delay-4" x="200" y="110" width="100" height="40" />
                     <rect class="sketch-line delay-4" x="0" y="110" width="100" height="40" />
-                    <path class="sketch-line delay-5" d="M250,150 L250,180 L160,180 L160,135 M155,140 L160,135 L165,140" />
+                    <path class="sketch-line delay-5"
+                        d="M250,150 L250,180 L160,180 L160,135 M155,140 L160,135 L165,140" />
                 </g>
-                
+
                 <!-- Business Model Canvas (Top Center, faint) -->
                 <g class="sketch-group canvas-group" transform="translate(350, -50)" opacity="0.6">
                     <rect class="sketch-line" x="0" y="0" width="400" height="200" />
@@ -122,41 +134,64 @@
         </div>
         <div class="container hero-container">
             <div class="hero-content">
-                <h1 class="hero-title" data-i18n="hero_title" data-i18n-html="true">The startup experiments<br><span class="hero-highlight">no one else shares.</span></h1>
-                <p class="hero-subtitle" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.05rem;" data-i18n="hero_desc">The ideas we test, the ones we kill, and the frameworks behind every decision.</p>
-                <p style="margin-bottom: 2.5rem;"><strong style="color: var(--osr-blue); font-size: 1.125rem;" data-i18n="hero_cta_line">Follow along, or come build with us.</strong></p>
-                
+                <h1 class="hero-title" data-i18n="hero_title" data-i18n-html="true">The startup experiments<br><span
+                        class="hero-highlight">no one else shares.</span></h1>
+                <p class="hero-subtitle" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.05rem;"
+                    data-i18n="hero_desc">The ideas we test, the ones we kill, and the frameworks behind every decision.
+                </p>
+                <p style="margin-bottom: 2.5rem;"><strong style="color: var(--osr-blue); font-size: 1.125rem;"
+                        data-i18n="hero_cta_line">Follow along, or come build with us.</strong></p>
+
                 <div class="hero-actions">
                     <div class="btn-group hero-btn-group">
-                        <a href="#subscribe" class="btn btn-primary" data-i18n="hero_btn_newsletter" onclick="gtag('event','click_hero_newsletter')">Get our newsletter</a>
-                        <a href="#join" class="btn btn-primary-outline" style="background: white;" data-i18n="hero_btn_join" onclick="gtag('event','click_hero_join')">Join our team</a>
+                        <a href="#subscribe" class="btn btn-primary" data-i18n="hero_btn_newsletter">Get our
+                            newsletter</a>
+                        <a href="#join" class="btn btn-primary-outline" style="background: white;"
+                            data-i18n="hero_btn_join">Join our team</a>
                     </div>
                 </div>
             </div>
 
             <div class="hero-visual">
-                <a href="#subscribe" style="text-decoration: none; display: block; max-width: 420px; margin-left: auto; transform: rotate(1deg) translateY(10px); transition: transform 0.4s ease;" onmouseover="this.style.transform='rotate(0deg) translateY(0px) scale(1.02)'" onmouseout="this.style.transform='rotate(1deg) translateY(10px) scale(1)'">
-                    <div class="newspaper-card" style="background: #f4f4f0; background-image: url('data:image/svg+xml,%3Csvg width=\'100\' height=\'100\' viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.8\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100\' height=\'100\' filter=\'url(%23noise)\' opacity=\'0.05\'/%3E%3C/svg%3E'); border: 1px solid rgba(0,0,0,0.2); border-radius: 2px; padding: 0; box-shadow: 20px 30px 60px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.7) inset;">
-                        
+                <a href="#subscribe"
+                    style="text-decoration: none; display: block; max-width: 420px; margin-left: auto; transform: rotate(1deg) translateY(10px); transition: transform 0.4s ease;"
+                    onmouseover="this.style.transform='rotate(0deg) translateY(0px) scale(1.02)'"
+                    onmouseout="this.style.transform='rotate(1deg) translateY(10px) scale(1)'">
+                    <div class="newspaper-card"
+                        style="background: #f4f4f0; background-image: url('data:image/svg+xml,%3Csvg width=\'100\' height=\'100\' viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.8\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100\' height=\'100\' filter=\'url(%23noise)\' opacity=\'0.05\'/%3E%3C/svg%3E'); border: 1px solid rgba(0,0,0,0.2); border-radius: 2px; padding: 0; box-shadow: 20px 30px 60px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.7) inset;">
+
                         <!-- Newspaper Header -->
-                        <div style="border-bottom: 2px solid #111; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.4);">
-                            <span style="font-family: 'IBM Plex Serif', 'Times New Roman', serif; font-style: italic; font-weight: 600; font-size: 1.1rem; color: #111;">OS Research Journal</span>
-                            <span style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: #d32f2f; display: flex; align-items: center; gap: 6px;">
-                                <svg viewBox="0 0 1012.81 1080" style="width: 12px; height: 12px; fill: #d32f2f; margin-bottom: 2px;">
-                                    <polygon points="411.41 250.58 411.37 250.63 411.41 250.64 411.41 250.58"/>
-                                    <path d="M754.05,265.26l-158.63,274.74,158.7,274.9,158.58-274.67.14.08,61.15-105.91c79.91-138.4,32.49-315.38-105.9-395.28-138.4-79.91-315.38-32.49-395.28,105.92h-.02s-44.45,76.97-44.45,76.97h300.74l24.97,43.26Z"/>
-                                    <polygon points="411.6 829.38 411.66 829.38 411.66 829.34 411.6 829.38"/>
-                                    <path d="M252.97,525h.46l-.58,1h317.54l158.78-275h-317.54l-.23.4v-.4h-122c-159.42,0-288.66,129.14-288.66,288.42,0,159.3,129.24,288.43,288.66,288.43v1.15h88.94l-150.44-260.57,25.07-43.43Z"/>
-                                    <path d="M974.01,645.53l-44.45-76.98-150.37,260.45h-50.05s-158.75-274.99-158.75-274.99H252.87s158.76,274.98,158.76,274.98h.01s0,.01,0,.01l61.15,105.91c79.91,138.4,256.88,185.82,395.27,105.92,138.4-79.91,185.82-256.88,105.92-395.28h.02Z"/>
+                        <div
+                            style="border-bottom: 2px solid #111; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.4);">
+                            <span
+                                style="font-family: 'IBM Plex Serif', 'Times New Roman', serif; font-style: italic; font-weight: 600; font-size: 1.1rem; color: #111;">OS
+                                Research Journal</span>
+                            <span
+                                style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: #d32f2f; display: flex; align-items: center; gap: 6px;">
+                                <svg viewBox="0 0 1012.81 1080"
+                                    style="width: 12px; height: 12px; fill: #d32f2f; margin-bottom: 2px;">
+                                    <polygon points="411.41 250.58 411.37 250.63 411.41 250.64 411.41 250.58" />
+                                    <path
+                                        d="M754.05,265.26l-158.63,274.74,158.7,274.9,158.58-274.67.14.08,61.15-105.91c79.91-138.4,32.49-315.38-105.9-395.28-138.4-79.91-315.38-32.49-395.28,105.92h-.02s-44.45,76.97-44.45,76.97h300.74l24.97,43.26Z" />
+                                    <polygon points="411.6 829.38 411.66 829.38 411.66 829.34 411.6 829.38" />
+                                    <path
+                                        d="M252.97,525h.46l-.58,1h317.54l158.78-275h-317.54l-.23.4v-.4h-122c-159.42,0-288.66,129.14-288.66,288.42,0,159.3,129.24,288.43,288.66,288.43v1.15h88.94l-150.44-260.57,25.07-43.43Z" />
+                                    <path
+                                        d="M974.01,645.53l-44.45-76.98-150.37,260.45h-50.05s-158.75-274.99-158.75-274.99H252.87s158.76,274.98,158.76,274.98h.01s0,.01,0,.01l61.15,105.91c79.91,138.4,256.88,185.82,395.27,105.92,138.4-79.91,185.82-256.88,105.92-395.28h.02Z" />
                                 </svg> <span data-i18n="card_latest">LATEST ISSUE</span>
                             </span>
                         </div>
-                        
+
                         <!-- Body & Image -->
                         <div style="padding: 1.5rem;">
-                            <img src="assets/images/replace box.png" style="width: 100%; border: 1.5px solid #111; padding: 4px; background: #fff; aspect-ratio: 4/3; object-fit: cover; filter: grayscale(100%) contrast(1.1); margin-bottom: 1.25rem;" alt="Latest Issue Cover">
-                            <h3 style="font-size: 1.6rem; font-weight: 800; line-height: 1.15; margin-bottom: 0.75rem; color: #111; letter-spacing: -0.02em;" data-i18n="card_title">Why we killed our best idea this&nbsp;month.</h3>
-                            <p style="font-size: 1.05rem; color: #333; line-height: 1.5; margin: 0; font-family: 'Georgia', serif;" data-i18n="card_excerpt">It started with an obvious truth: The market was real. But one experiment changed everything...</p>
+                            <img src="assets/images/replace box.png"
+                                style="width: 100%; border: 1.5px solid #111; padding: 4px; background: #fff; aspect-ratio: 4/3; object-fit: cover; filter: grayscale(100%) contrast(1.1); margin-bottom: 1.25rem;"
+                                alt="Latest Issue Cover">
+                            <h3 style="font-size: 1.6rem; font-weight: 800; line-height: 1.15; margin-bottom: 0.75rem; color: #111; letter-spacing: -0.02em;"
+                                data-i18n="card_title">Why we killed our best idea this&nbsp;month.</h3>
+                            <p style="font-size: 1.05rem; color: #333; line-height: 1.5; margin: 0; font-family: 'Georgia', serif;"
+                                data-i18n="card_excerpt">It started with an obvious truth: The market was real. But one
+                                experiment changed everything...</p>
                         </div>
                     </div>
                 </a>
@@ -173,33 +208,39 @@
                     <div class="section-label" data-i18n="who_label">WHO WE ARE</div>
                 </div>
                 <div class="editorial-content">
-                    <h2 class="section-title" data-i18n="who_title" data-i18n-html="true">A <strong>startup validation studio</strong> built for Vietnam's blue&nbsp;oceans.</h2>
+                    <h2 class="section-title" data-i18n="who_title" data-i18n-html="true">A <strong>startup validation
+                            studio</strong> built for Vietnam's blue&nbsp;oceans.</h2>
                     <p class="section-desc" data-i18n="who_desc">
-                        We are on a mission to build 20 blue-ocean companies over 10 years. We originate ideas internally, test them with structured experiments, invest in the winners, and operate them alongside founders.
+                        We are on a mission to build 20 blue-ocean companies over 10 years. We originate ideas
+                        internally, test them with structured experiments, invest in the winners, and operate them
+                        alongside founders.
                     </p>
                 </div>
             </div>
-            
+
             <div class="divider-subtle"></div>
-            
+
             <!-- Block B: Methodology -->
             <div class="editorial-row">
                 <div class="editorial-label">
                     <div class="section-label" data-i18n="what_label">WHAT WE DO</div>
                 </div>
                 <div class="editorial-content">
-                    <h2 class="section-title" data-i18n="what_title" data-i18n-html="true">We <strong>kill ideas</strong> for a living.<br>The ones that survive become companies.</h2>
+                    <h2 class="section-title" data-i18n="what_title" data-i18n-html="true">We <strong>kill
+                            ideas</strong> for a living.<br>The ones that survive become companies.</h2>
                     <div class="desc-content-grid">
                         <p class="section-desc" data-i18n="what_desc1" data-i18n-html="true">
-                            We pick massive problems, design experiments to <strong>test every assumption</strong>, and only invest in the ideas that survive. Most don't. That is our point.
+                            We pick massive problems, design experiments to <strong>test every assumption</strong>, and
+                            only invest in the ideas that survive. Most don't. That is our point.
                         </p>
                         <p class="section-desc" data-i18n="what_desc2" data-i18n-html="true">
-                            Every framework, every failed experiment, <strong>every honest result goes public</strong>. If it saves one founder three months, the work was worth it.
+                            Every framework, every failed experiment, <strong>every honest result goes public</strong>.
+                            If it saves one founder three months, the work was worth it.
                         </p>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Block C: Vision Banner -->
             <div class="who-card shadow-lg bg-primary">
                 <!-- Abstract Lab Circles for visual break -->
@@ -207,7 +248,7 @@
                     <div class="circle circle-1"></div>
                     <div class="circle circle-2"></div>
                 </div>
-                
+
                 <div class="who-card-inner banner-layout">
                     <h4 class="card-mini-title" data-i18n="goal_label">OUR 10-YEAR GOAL</h4>
                     <p class="card-large-text" data-i18n="goal_text">Build 20 blue-ocean companies in Vietnam.</p>
@@ -222,9 +263,10 @@
         <div class="container relative-z">
             <div class="section-header">
                 <div class="section-label" data-i18n="why_label">WHY YOU SHOULD FOLLOW US</div>
-                <h2 class="section-title" data-i18n="why_title">Raw evidence, failed experiments, and zero&nbsp;fluff.</h2>
+                <h2 class="section-title" data-i18n="why_title">Raw evidence, failed experiments, and zero&nbsp;fluff.
+                </h2>
             </div>
-            
+
             <div class="grid-3">
                 <!-- Card 1 -->
                 <div class="feature-card shadow-md">
@@ -236,7 +278,9 @@
                     </div>
                     <div class="card-content">
                         <h3 class="feature-title" data-i18n="feat1_title">Business ideas with real&nbsp;analysis</h3>
-                        <p class="feature-desc" data-i18n="feat1_desc" data-i18n-html="true">Market gaps we found, why we think they're real, and the <strong>assumptions that could kill them</strong>. Not shower thoughts. Structured opportunities.</p>
+                        <p class="feature-desc" data-i18n="feat1_desc" data-i18n-html="true">Market gaps we found, why
+                            we think they're real, and the <strong>assumptions that could kill them</strong>. Not shower
+                            thoughts. Structured opportunities.</p>
                     </div>
                 </div>
                 <!-- Card 2 -->
@@ -249,7 +293,9 @@
                     </div>
                     <div class="card-content">
                         <h3 class="feature-title" data-i18n="feat2_title">Experiments and honest&nbsp;results</h3>
-                        <p class="feature-desc" data-i18n="feat2_desc" data-i18n-html="true">What we tested, <strong>how much it cost</strong>, what the data said. Including the ideas we killed and exactly why they didn't survive.</p>
+                        <p class="feature-desc" data-i18n="feat2_desc" data-i18n-html="true">What we tested, <strong>how
+                                much it cost</strong>, what the data said. Including the ideas we killed and exactly why
+                            they didn't survive.</p>
                     </div>
                 </div>
                 <!-- Card 3 -->
@@ -262,7 +308,9 @@
                     </div>
                     <div class="card-content">
                         <h3 class="feature-title" data-i18n="feat3_title">Frameworks that save you&nbsp;months</h3>
-                        <p class="feature-desc" data-i18n="feat3_desc" data-i18n-html="true">Blue Ocean strategy, validation methods, business model design. Applied to <strong>real Vietnam situations</strong>, not textbook theory.</p>
+                        <p class="feature-desc" data-i18n="feat3_desc" data-i18n-html="true">Blue Ocean strategy,
+                            validation methods, business model design. Applied to <strong>real Vietnam
+                                situations</strong>, not textbook theory.</p>
                     </div>
                 </div>
             </div>
@@ -274,14 +322,16 @@
         <!-- Visual decorators -->
         <div class="grid-cross gc-tl"></div>
         <div class="grid-cross gc-tr"></div>
-        
+
         <div class="container relative-z">
             <div class="section-header text-center">
                 <div class="section-label" data-i18n="sectors_label">5 BLUE OCEAN SECTORS</div>
                 <h2 class="section-title" data-i18n="sectors_title">Where we're looking. And&nbsp;why.</h2>
-                <p class="section-subtitle centered" data-i18n="sectors_subtitle" data-i18n-html="true">Five sectors in Vietnam where <strong>real problems hide inside broken systems</strong>.<br>We are researching across blue ocean markets.</p>
+                <p class="section-subtitle centered" data-i18n="sectors_subtitle" data-i18n-html="true">Five sectors in
+                    Vietnam where <strong>real problems hide inside broken systems</strong>.<br>We are researching
+                    across blue ocean markets.</p>
             </div>
-            
+
             <div class="sectors-grid">
                 <!-- Sector 1 -->
                 <div class="sector-card shadow-sm">
@@ -293,10 +343,12 @@
                     </div>
                     <div class="card-content relative-z">
                         <h3 class="sector-title" data-i18n="s1_title">Education</h3>
-                        <p class="sector-desc" data-i18n="s1_desc" data-i18n-html="true">Vietnam's system rewards memorization over imagination. We're building for <strong>discovery and critical thinking</strong> in the next generation.</p>
+                        <p class="sector-desc" data-i18n="s1_desc" data-i18n-html="true">Vietnam's system rewards
+                            memorization over imagination. We're building for <strong>discovery and critical
+                                thinking</strong> in the next generation.</p>
                     </div>
                 </div>
-                
+
                 <!-- Sector 2 -->
                 <div class="sector-card shadow-sm">
                     <img src="assets/images/insurance.jpg" class="sector-bg-img" alt="Insurance">
@@ -307,10 +359,12 @@
                     </div>
                     <div class="card-content relative-z">
                         <h3 class="sector-title" data-i18n="s2_title">Insurance</h3>
-                        <p class="sector-desc" data-i18n="s2_desc" data-i18n-html="true">Fragmented, opaque, inaccessible. We're designing <strong>transparent, tech-enabled</strong> protection that people actually trust.</p>
+                        <p class="sector-desc" data-i18n="s2_desc" data-i18n-html="true">Fragmented, opaque,
+                            inaccessible. We're designing <strong>transparent, tech-enabled</strong> protection that
+                            people actually trust.</p>
                     </div>
                 </div>
-                
+
                 <!-- Sector 3 -->
                 <div class="sector-card shadow-sm">
                     <img src="assets/images/urban.jpg" class="sector-bg-img" alt="Urban">
@@ -321,11 +375,13 @@
                     </div>
                     <div class="card-content relative-z">
                         <h3 class="sector-title" data-i18n="s3_title">Urban</h3>
-                        <p class="sector-desc" data-i18n="s3_desc" data-i18n-html="true">Cities are growing faster than their systems. We're solving <strong>daily friction</strong> in transport, housing, and services.</p>
+                        <p class="sector-desc" data-i18n="s3_desc" data-i18n-html="true">Cities are growing faster than
+                            their systems. We're solving <strong>daily friction</strong> in transport, housing, and
+                            services.</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="sectors-grid-bottom">
                 <!-- Sector 4 -->
                 <div class="sector-card shadow-sm">
@@ -337,10 +393,12 @@
                     </div>
                     <div class="card-content relative-z">
                         <h3 class="sector-title" data-i18n="s4_title">Health</h3>
-                        <p class="sector-desc" data-i18n="s4_desc" data-i18n-html="true">The gap between how long people live and how well they live keeps widening. We're shifting toward <strong>prevention and long-term wellness</strong>.</p>
+                        <p class="sector-desc" data-i18n="s4_desc" data-i18n-html="true">The gap between how long people
+                            live and how well they live keeps widening. We're shifting toward <strong>prevention and
+                                long-term wellness</strong>.</p>
                     </div>
                 </div>
-                
+
                 <!-- Sector 5 -->
                 <div class="sector-card shadow-sm">
                     <img src="assets/images/culture.jpg" class="sector-bg-img" alt="Culture">
@@ -351,7 +409,9 @@
                     </div>
                     <div class="card-content relative-z">
                         <h3 class="sector-title" data-i18n="s5_title">Culture</h3>
-                        <p class="sector-desc" data-i18n="s5_desc" data-i18n-html="true">Decades of rapid growth left a cultural foundation underdeveloped. We're investing in <strong>cultural literacy</strong> and national confidence.</p>
+                        <p class="sector-desc" data-i18n="s5_desc" data-i18n-html="true">Decades of rapid growth left a
+                            cultural foundation underdeveloped. We're investing in <strong>cultural literacy</strong>
+                            and national confidence.</p>
                     </div>
                 </div>
             </div>
@@ -360,21 +420,32 @@
 
 
     <!-- ======== SUBSCRIBE CTA ======== -->
-    <section id="subscribe" class="section subscribe-cta" style="background-image: url('assets/images/sub_bg_osr_draft.png'); background-position: center; background-size: 140%; background-repeat: no-repeat; color: var(--text-main); padding: 8rem 0; box-shadow: inset 0 0 120px rgba(0,0,0,0.03);">
+    <section id="subscribe" class="section subscribe-cta"
+        style="background-image: url('assets/images/sub_bg_osr_draft.png'); background-position: center; background-size: 140%; background-repeat: no-repeat; color: var(--text-main); padding: 8rem 0; box-shadow: inset 0 0 120px rgba(0,0,0,0.03);">
         <div class="container relative-z">
-            <div class="subscribe-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; background: rgba(255,255,255,0.3); padding: 4rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.8); backdrop-filter: blur(8px); box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
+            <div class="subscribe-grid"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; background: rgba(255,255,255,0.3); padding: 4rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.8); backdrop-filter: blur(8px); box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
                 <div class="subscribe-text text-left">
-                    <div class="section-label" style="color: var(--text-muted); font-weight: 700;" data-i18n="sub_label">STAY UPDATED</div>
-                    <h2 class="section-title" style="color: var(--text-main); margin-bottom: 1rem; font-weight: 800;" data-i18n="sub_title">Get our weekly experiment&nbsp;data.</h2>
-                    <p style="color: var(--text-muted); font-size: 1.125rem; font-weight: 500;" data-i18n="sub_desc">We share our frameworks, raw evidence, and the ideas we kill. No spam.</p>
+                    <div class="section-label" style="color: var(--text-muted); font-weight: 700;"
+                        data-i18n="sub_label">STAY UPDATED</div>
+                    <h2 class="section-title" style="color: var(--text-main); margin-bottom: 1rem; font-weight: 800;"
+                        data-i18n="sub_title">Get our weekly experiment&nbsp;data.</h2>
+                    <p style="color: var(--text-muted); font-size: 1.125rem; font-weight: 500;" data-i18n="sub_desc">We
+                        share our frameworks, raw evidence, and the ideas we kill. No spam.</p>
                 </div>
                 <div class="subscribe-form-wrapper">
-                    <form id="subscribe-form" class="subscribe-form" style="background: transparent; box-shadow: none; border: none; padding: 0;">
+                    <form id="subscribe-form" class="subscribe-form"
+                        style="background: transparent; box-shadow: none; border: none; padding: 0;">
                         <div class="subscribe-input-group">
-                            <input id="email-input" type="email" placeholder="Your email address" required style="background: transparent; border: none; color: var(--text-main); padding: 1rem 1.5rem; flex: 1; outline: none; box-shadow: none;">
-                            <button id="subscribe-btn" type="submit" class="btn btn-primary" style="padding: 1rem 2rem; border-radius: 40px; margin:0; min-width: 140px; transition: all 0.3s ease;" data-i18n="sub_btn">Subscribe</button>
+                            <input id="email-input" type="email" placeholder="Your email address" required
+                                style="background: transparent; border: none; color: var(--text-main); padding: 1rem 1.5rem; flex: 1; outline: none; box-shadow: none;">
+                            <button id="subscribe-btn" type="submit" class="btn btn-primary"
+                                style="padding: 1rem 2rem; border-radius: 40px; margin:0; min-width: 140px; transition: all 0.3s ease;"
+                                data-i18n="sub_btn">Subscribe</button>
                         </div>
-                        <div id="subscribe-feedback" style="margin-top: 0.75rem; padding-left: 1.5rem; font-size: 0.875rem; font-weight: 500; opacity: 0; transition: opacity 0.3s ease;"></div>
+                        <div id="subscribe-feedback"
+                            style="margin-top: 0.75rem; padding-left: 1.5rem; font-size: 0.875rem; font-weight: 500; opacity: 0; transition: opacity 0.3s ease;">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -382,9 +453,11 @@
     </section>
 
     <!-- ======== HIGHLIGHT TICKER TAPE ======== -->
-    <div class="hiring-ticker" style="background: var(--osr-blue); color: white; padding: 0.75rem 0; overflow: hidden; white-space: nowrap; display: flex; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; border-top: 1px solid rgba(255,255,255,0.1);">
+    <div class="hiring-ticker"
+        style="background: var(--osr-blue); color: white; padding: 0.75rem 0; overflow: hidden; white-space: nowrap; display: flex; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; border-top: 1px solid rgba(255,255,255,0.1);">
         <div class="marquee-track" style="animation: marquee 30s linear infinite; display: flex;">
-            <span style="padding-right: 3rem;" data-i18n="ticker" data-i18n-repeat="true">WE'RE HIRING INNOVATORS •</span>
+            <span style="padding-right: 3rem;" data-i18n="ticker" data-i18n-repeat="true">WE'RE HIRING INNOVATORS
+                •</span>
             <span style="padding-right: 3rem;" data-i18n="ticker">WE'RE HIRING INNOVATORS •</span>
             <span style="padding-right: 3rem;" data-i18n="ticker">WE'RE HIRING INNOVATORS •</span>
             <span style="padding-right: 3rem;" data-i18n="ticker">WE'RE HIRING INNOVATORS •</span>
@@ -404,42 +477,59 @@
     </div>
 
     <!-- ======== FOOTER CTA & FOOTER ======== -->
-    <footer id="join" class="footer bg-dark text-white text-center" style="position: relative; overflow: hidden; padding: 6rem 0 3rem 0;">
+    <footer id="join" class="footer bg-dark text-white text-center"
+        style="position: relative; overflow: hidden; padding: 6rem 0 3rem 0;">
         <!-- Glowing background smoothed down -->
-        <div style="position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(2, 72, 246, 0.3) 0%, transparent 70%); border-radius: 50%; pointer-events: none; z-index: 0;"></div>
+        <div
+            style="position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(2, 72, 246, 0.3) 0%, transparent 70%); border-radius: 50%; pointer-events: none; z-index: 0;">
+        </div>
 
         <div class="container text-center relative-z">
             <div class="footer-cta" style="margin-bottom: 6rem; position: relative;">
-                
-                <div class="footer-desc-blocks mx-auto" style="max-width: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 3rem; text-align: center;">
-                    <h2 class="footer-title" style="font-size: 2.75rem; font-weight: 700; margin-bottom: 1.25rem; line-height: 1.2; letter-spacing: -0.02em; color: white;" data-i18n="footer_title" data-i18n-html="true">
+
+                <div class="footer-desc-blocks mx-auto"
+                    style="max-width: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 3rem; text-align: center;">
+                    <h2 class="footer-title"
+                        style="font-size: 2.75rem; font-weight: 700; margin-bottom: 1.25rem; line-height: 1.2; letter-spacing: -0.02em; color: white;"
+                        data-i18n="footer_title" data-i18n-html="true">
                         No job titles. No corporate ladder.
                     </h2>
-                    <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); line-height: 1.6; font-weight: 500; margin: 0;" data-i18n="footer_desc">
+                    <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); line-height: 1.6; font-weight: 500; margin: 0;"
+                        data-i18n="footer_desc">
                         Just hard problems and people who want to solve them well.
                     </p>
                 </div>
 
                 <!-- Initial button -->
-                <button id="join-btn" onclick="gtag('event','click_join_team');expandJoinButtons()" class="btn btn-primary btn-icon" style="padding: 1rem 2.5rem; font-size: 1rem; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; cursor: pointer; border: none;" data-i18n="footer_btn" data-i18n-html="true">
+                <button id="join-btn" onclick="expandJoinButtons()" class="btn btn-primary btn-icon"
+                    style="padding: 1rem 2.5rem; font-size: 1rem; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; cursor: pointer; border: none;"
+                    data-i18n="footer_btn" data-i18n-html="true">
                     Join Our Team <i data-lucide="arrow-right" style="width: 20px; height: 20px;"></i>
                 </button>
 
                 <!-- Expanded buttons (hidden by default) -->
-                <div id="join-expanded" style="display: none; gap: 1rem; align-items: center; justify-content: center; flex-wrap: wrap;">
-                    <a href="https://www.topcv.vn/cong-ty/cong-ty-tnhh-os-research/194303.html" target="_blank" class="btn btn-primary btn-icon" style="padding: 1rem 2rem; font-size: 0.95rem; border-radius: 50px; letter-spacing: 0.03em; font-weight: 700; gap: 0.5rem;" data-i18n="footer_btn_positions" data-i18n-html="true" onclick="gtag('event','click_open_positions')">
+                <div id="join-expanded"
+                    style="display: none; gap: 1rem; align-items: center; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://www.topcv.vn/cong-ty/cong-ty-tnhh-os-research/194303.html" target="_blank"
+                        class="btn btn-primary btn-icon"
+                        style="padding: 1rem 2rem; font-size: 0.95rem; border-radius: 50px; letter-spacing: 0.03em; font-weight: 700; gap: 0.5rem;"
+                        data-i18n="footer_btn_positions" data-i18n-html="true">
                         <i data-lucide="briefcase" style="width: 18px; height: 18px;"></i> See Open Positions
                     </a>
-                    <a href="https://vn.linkedin.com/company/osresearch-vn" target="_blank" class="btn btn-primary-outline btn-icon" style="padding: 1rem 2rem; font-size: 0.95rem; border-radius: 50px; letter-spacing: 0.03em; font-weight: 700; color: white; border-color: rgba(255,255,255,0.3); gap: 0.5rem;" data-i18n="footer_btn_click" data-i18n-html="true" onclick="gtag('event','click_see_if_we_click')">
+                    <a href="https://vn.linkedin.com/company/osresearch-vn" target="_blank"
+                        class="btn btn-primary-outline btn-icon"
+                        style="padding: 1rem 2rem; font-size: 0.95rem; border-radius: 50px; letter-spacing: 0.03em; font-weight: 700; color: white; border-color: rgba(255,255,255,0.3); gap: 0.5rem;"
+                        data-i18n="footer_btn_click" data-i18n-html="true">
                         <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i> See If We Click
                     </a>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <div class="copyright" data-i18n="footer_copy">© 2026 OS Research. Ho Chi Minh City, Vietnam.</div>
                 <div class="social-links">
-                    <a href="https://vn.linkedin.com/company/osresearch-vn" target="_blank" onclick="gtag('event','click_social',{platform:'linkedin'})">LinkedIn</a> • <a href="https://www.instagram.com/osresearch.vn/" target="_blank" onclick="gtag('event','click_social',{platform:'instagram'})">Instagram</a>
+                    <a href="https://vn.linkedin.com/company/osresearch-vn" target="_blank">LinkedIn</a> • <a
+                        href="https://www.instagram.com/osresearch.vn/" target="_blank">Instagram</a>
                 </div>
                 <div class="contact-email">
                     <a href="mailto:info@osresearch.vn">info@osresearch.vn</a>
@@ -585,8 +675,8 @@
             }
         };
 
-        let currentLang = 'en';
-        
+        let currentLang = 'vi';
+
         // Initialize default language on load
         window.addEventListener('DOMContentLoaded', () => {
             applyTranslations(currentLang);
@@ -599,11 +689,10 @@
         });
         function toggleLang() {
             currentLang = currentLang === 'en' ? 'vi' : 'en';
-            gtag('event', 'language_switch', { language: currentLang });
             applyTranslations(currentLang);
             document.getElementById('lang-label').textContent = currentLang.toUpperCase();
             document.documentElement.lang = currentLang;
-            
+
             // Update placeholder
             const emailInput = document.getElementById('email-input');
             if (emailInput) {
@@ -638,22 +727,22 @@
         function expandJoinButtons() {
             const btn = document.getElementById('join-btn');
             const expanded = document.getElementById('join-expanded');
-            
+
             // Animate out the main button
             btn.style.transition = 'all 0.3s ease';
             btn.style.opacity = '0';
             btn.style.transform = 'scale(0.8)';
-            
+
             setTimeout(() => {
                 btn.style.display = 'none';
                 expanded.style.display = 'flex';
                 expanded.style.opacity = '0';
                 expanded.style.transform = 'translateY(10px)';
                 expanded.style.transition = 'all 0.4s ease';
-                
+
                 // Re-render lucide icons inside expanded buttons
                 lucide.createIcons();
-                
+
                 requestAnimationFrame(() => {
                     expanded.style.opacity = '1';
                     expanded.style.transform = 'translateY(0)';
@@ -664,44 +753,43 @@
         // ======== SUBSCRIBE FORM HANDLER ========
         const subscribeForm = document.getElementById('subscribe-form');
         if (subscribeForm) {
-            subscribeForm.addEventListener('submit', async function(e) {
+            subscribeForm.addEventListener('submit', async function (e) {
                 e.preventDefault();
-                
+
                 const emailInput = document.getElementById('email-input');
                 const btn = document.getElementById('subscribe-btn');
                 const feedback = document.getElementById('subscribe-feedback');
                 const email = emailInput.value.trim();
-                
+
                 if (!email) return;
-                
+
                 // Loading state
                 const originalText = btn.textContent;
                 btn.textContent = currentLang === 'vi' ? 'Đang gửi...' : 'Sending...';
                 btn.disabled = true;
                 btn.style.opacity = '0.7';
                 feedback.style.opacity = '0';
-                
+
                 try {
                     const res = await fetch('/api/subscribe', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ email }),
                     });
-                    
+
                     const data = await res.json();
-                    
+
                     if (res.ok && data.success) {
-                        // Success — track in GA4
-                        gtag('event', 'newsletter_subscribe', { method: 'landing_page' });
-                        feedback.textContent = currentLang === 'vi' 
-                            ? '✓ Đăng ký thành công! Kiểm tra email của bạn nhé.' 
+                        // Success
+                        feedback.textContent = currentLang === 'vi'
+                            ? '✓ Đăng ký thành công! Kiểm tra email của bạn nhé.'
                             : '✓ You\'re in! Check your inbox.';
                         feedback.style.color = '#16a34a';
                         feedback.style.opacity = '1';
                         emailInput.value = '';
                         btn.textContent = currentLang === 'vi' ? '✓ Đã đăng ký' : '✓ Subscribed';
                         btn.style.background = '#16a34a';
-                        
+
                         setTimeout(() => {
                             btn.textContent = originalText;
                             btn.disabled = false;
@@ -713,22 +801,23 @@
                         throw new Error(data.error || 'Subscription failed');
                     }
                 } catch (err) {
-                    feedback.textContent = currentLang === 'vi' 
-                        ? '✗ Có lỗi xảy ra. Vui lòng thử lại.' 
+                    feedback.textContent = currentLang === 'vi'
+                        ? '✗ Có lỗi xảy ra. Vui lòng thử lại.'
                         : '✗ Something went wrong. Please try again.';
                     feedback.style.color = '#dc2626';
                     feedback.style.opacity = '1';
                     btn.textContent = originalText;
                     btn.disabled = false;
                     btn.style.opacity = '1';
-                    
+
                     setTimeout(() => { feedback.style.opacity = '0'; }, 4000);
                 }
             });
         }
     </script>
-    
+
     <!-- Vercel Speed Insights -->
     <script defer src="/_vercel/insights/script.js"></script>
 </body>
+
 </html>
